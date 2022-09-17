@@ -10,6 +10,7 @@ namespace classwork1
             //r- омы
             //u - вольт
             //i - ампери
+            double I, U;
             bool isOK = false;
             do
             {
