@@ -10,7 +10,7 @@ namespace lab3
         again:
             string a1 = Console.ReadLine();
             bool isCorrect = false;
-            if (check(a1))
+            if (a1.Length <= 4)
             {
 
                 try
@@ -37,18 +37,7 @@ namespace lab3
                 Console.WriteLine("не больше 4!!!");
                 goto again;
             }
-
             Console.ReadKey();
-        }
-        bool check (string a1)
-        {
-            string a2 = a1;
-            bool check = false;
-            if (a2.Length == 4) 
-            {
-                check = true;
-            }
-            return check;
         }
     }
 }
