@@ -4,7 +4,7 @@ namespace lab4
 {
     class Program
     {
-        static int Check1(out int countmass)
+        static int Check(out int countmass)
         {
             try
             {
@@ -14,32 +14,19 @@ namespace lab4
             catch (FormatException)
             {
                 Console.WriteLine("Цифры!!!");
-                return Check1(out countmass);
-            }
-        }
-        static int Check2(out int mass)
-        {
-            try
-            {
-                mass = int.Parse(Console.ReadLine());
-                return mass;
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Цифры!!!");
-                return Check2(out mass);
+                return Check(out countmass);
             }
         }
         static void Main(string[] args)
         {
             Console.WriteLine("20 задание");
             Console.WriteLine("Введите количество строк, которые хотите ввести:");
-            Check1(out int countmass);
+            Check(out int countmass);
             int[] strs = new int[countmass];
             for (int i = 1; i <= countmass; i++)
             {
                 Console.WriteLine($"Введите строку №{i}");
-                Check2(out int mass);
+                Check(out int mass);
                 strs[i - 1] = mass;
             }
             Array.Sort(strs);
