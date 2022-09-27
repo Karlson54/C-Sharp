@@ -32,7 +32,7 @@ namespace lab4
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("11 задание");
+            Console.WriteLine("20 задание");
             Console.WriteLine("Введите количество строк, которые хотите ввести:");
             Check1(out int countmass);
             int[] strs = new int[countmass];
