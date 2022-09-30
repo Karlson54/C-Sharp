@@ -23,7 +23,7 @@ namespace lab5
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("");
+            Console.WriteLine("20 задание");
             int n, m;
             Console.WriteLine("Введите кол-во строк");
             Check(out n);
@@ -35,7 +35,7 @@ namespace lab5
                 for (int j = 0; j < m; j++)
                 {
                     Console.WriteLine($"Введите {i}:{j}");
-                    mas[i, j] = int.Parse(Console.ReadLine());
+                    Check(out mas[i, j]);
                 }
             }
             Console.WriteLine("Массив:");
