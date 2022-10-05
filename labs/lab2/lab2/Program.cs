@@ -12,23 +12,17 @@ namespace classwork
             else
             {
                 Console.WriteLine("Неправильные значения!!!");
-                values(nn, nk);
             }
         }
-        static void values(int nn, int nk)
+        static void Main(string[] args)
         {
+            int nn, nk, k;
             Console.WriteLine("От скольки?");
             nn = int.Parse(Console.ReadLine());
             Console.WriteLine("До скольки?");
             nk = int.Parse(Console.ReadLine());
             Check(nn, nk);
-        }
-        static void Main(string[] args)
-        {
-            int nn = 0, nk = 0, k;
             double res = 0;
-            values(nn, nk);
-            Check(nn, nk);
             for (k = nn; k <= nk; k++)
             {
                 res += (Math.Pow(-1, k) * Math.Pow(k, 2) - 1) / (Math.Pow(k, 2) + 3);
