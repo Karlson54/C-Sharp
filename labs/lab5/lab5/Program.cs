@@ -28,7 +28,9 @@ namespace lab5
             int num;
             Console.WriteLine("Какое число искать?");
             Check(out num);
+
             int[,] mas = new int[n, m];
+
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
@@ -37,7 +39,9 @@ namespace lab5
                     Check(out mas[i, j]);
                 }
             }
+
             Console.WriteLine("Массив:");
+
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
@@ -58,7 +62,9 @@ namespace lab5
                     }
                 }
             }
+
             Console.WriteLine();
+
             Console.WriteLine("Массив переделанный:");
             for (int i = 0; i < n; i++)
             {
