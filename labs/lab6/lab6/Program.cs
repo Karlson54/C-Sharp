@@ -17,6 +17,9 @@ namespace lab6
             Array.Reverse(word);
             Console.WriteLine(word);
         }
+
+        //6 задание
+
         static void Main(string[] args)
         {
             string word = Console.ReadLine();
